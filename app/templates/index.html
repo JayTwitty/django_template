@@ -6,12 +6,17 @@
 </head>
 
 <body background=http://www.clemson.edu/administration/public-affairs/toolbox/downloads/logos/logos/paw.gif style="text-align:center; background-color: purple; color: white">
-<h1>"Clemson Google"
-    2015 Offensive Stat Leaders </h1>
-<h2>2015 ACC Champions </h2>
-<h3><u>2015 Record:</u> <br> Overall: 14 - 1 &nbsp; &nbsp; Conf: 8-0 </h3>
-<br>
+<h1 style='border:4px white solid; font-size:42px;'>Clemson University<br>2015 Offensive Stats Leaders</h1>
+<h2 style="font-size:30px">2015 ACC Champions </h2>
+<h3 style="font-size:24px"><u>2015 Record:</u> <br> Overall: 14 - 1 &nbsp; &nbsp; Conf: 8-0 </h3>
+<h3><u>Head Coach:</u> <br> Dabo Swinney <br>"2015 National Coach of the Year" </h3>
 
+<br>
+<a href="http://www.daboswinney.com/website/">
+<img src=https://pbs.twimg.com/media/CYctDbYUwAAHc-1.jpg />
+</a>
+<br>
+<br>
 {% for player in players %}
     <div style="text-transform: uppercase; font-size: 30px">#{{ player.jersey_number }} - <strong>{{ player.player_name }}</strong> </div>
     <table bgcolor="purple" align = "center" border="1px">
@@ -38,5 +43,8 @@
         </table>
     <br>
 {% endfor %}
+<a href="http://www.clemsontigers.com/SportSelect.dbml?DB_OEM_ID=28500&SPID=103701&SPSID=657769&DB_OEM_ID=28500">
+<img src=https://sportposterswag.files.wordpress.com/2015/08/clemson-football.jpg />
+</a>
 </body>
 </html>
