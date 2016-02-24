@@ -7,18 +7,35 @@
 
 <body background=http://www.clemson.edu/administration/public-affairs/toolbox/downloads/logos/logos/paw.gif style="text-align:center; background-color: purple; color: white">
 <h1>"Clemson Google"
-    2015 Offensive Stats </h1>
+    2015 Offensive Stat Leaders </h1>
 <h2>2015 ACC Champions </h2>
-<h3>2015 Record: 14 - 1 (Conf: 8-0) </h3>
+<h3><u>2015 Record:</u> <br> Overall: 14 - 1 &nbsp; &nbsp; Conf: 8-0 </h3>
+<br>
 
 {% for player in players %}
-    <div><strong>{{ player.player_name }}</strong> #{{ player.jersey_number }}</div>
-
-    <div>Position: {{ player.player_position }}</div>
-    <div>Plays from Scrimmage: &emsp;{{ player.plays_from_scrimmage }}</div>
-    <div>Yards from Scrimmage: &emsp;{{ player.yards_from_scrimmage }}</div>
-    <div>Average Yards per Play from Scrimmage: &emsp;{{ player.ave_yards_per_play_from_scrimmage }}</div>
-    <div>Touchdowns from Scrimmage: &emsp;{{ player.tds_from_scrimmage }}</div>
+    <div style="text-transform: uppercase; font-size: 30px">#{{ player.jersey_number }} - <strong>{{ player.player_name }}</strong> </div>
+    <table bgcolor="purple" align = "center" border="1px">
+            <tr>
+                <td>Position:</td>
+                <td style="padding:5px">{{ player.player_position }}</td>
+            </tr>
+            <tr>
+                <td>Plays from Scrimmage:</td>
+                <td style="padding:5px">{{ player.plays_from_scrimmage }}</td>
+            </tr>
+            <tr>
+                <td>Yards from Scrimmage:</td>
+                <td style="padding:5px">{{ player.yards_from_scrimmage }}</td>
+            </tr>
+            <tr>
+                <td>Average Yards per<br>Play from Scrimmage:</td>
+                <td style="padding:5px">{{ player.ave_yards_per_play_from_scrimmage }}</td>
+            </tr>
+            <tr>
+                <td>Touchdowns from Scrimmage: </td>
+                <td style="padding:5px">{{ player.tds_from_scrimmage }}</td>
+            </tr>
+        </table>
     <br>
 {% endfor %}
 </body>
